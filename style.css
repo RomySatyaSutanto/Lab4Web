@@ -1,0 +1,83 @@
+/* Reset Margin dan Padding Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Pembungkus Utama Website */
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menu Navigasi */
+nav {
+    background: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background: #35424a;
+    color: white;
+}
+
+/* Pembungkus Konten Tengah (Menggunakan Flexbox) */
+#wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+/* Konten Utama di Kiri */
+#main {
+    flex: 3;
+    padding-right: 20px;
+}
+
+/* Sidebar di Kanan */
+#sidebar {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 15px;
+    border-left: 3px solid #35424a;
+}
+
+/* Footer Bagian Bawah */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
